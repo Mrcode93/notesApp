@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Cairo", sans-serif;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+}
+.container .icon {
+  width: 250px;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23);
+}
+.container .icon p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.container .icon ion-icon {
+  width: 40%;
+  height: 34%;
+  border-radius: 50%;
+  font-size: 14px;
+  background-color: #ddd;
+  color: rgb(9, 212, 9);
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(18, 45, 255, 0.23);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.container .icon ion-icon:active {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.container .card {
+  width: 250px;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+.container .card span {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(247, 45, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container .card span:active {
+  background-color: rgb(188, 48, 48);
+}
+.container .card .title {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .card .title input {
+  width: 100%;
+  height: 50%;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.container .card .description {
+  width: 100%;
+  height: 45%;
+  margin-bottom: 10px;
+}
+.container .card .description textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.container .card button {
+  width: 70%;
+  height: 40px;
+  background-color: rgb(35, 200, 35);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.container .card button:active {
+  background-color: rgb(30, 165, 30);
+}
+
+.note {
+  background-color: rgba(208, 194, 141, 0.617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 250px;
+  height: 300px;
+  flex-direction: column;
+  padding: 5px 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+.note h1 {
+  color: black;
+  border-bottom: 1px solid hsl(0deg, 0%, 0%);
+}
+.note p {
+  color: rgb(70, 70, 70);
+}
+.note span {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(247, 45, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.note span:active {
+  background-color: rgb(188, 48, 48);
+}/*# sourceMappingURL=style.css.map */
